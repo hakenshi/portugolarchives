@@ -3,14 +3,18 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro p, p1 = 1, vt, tr	
+		inteiro p, p1 = 1, vt, tr, d
+		escreva("lojas mj \n")
 		enquanto(verdadeiro){
-		escreva("insira o valor de um produto \n")
-		escreva("digite -1 para pagar \n")
+		escreva("\ninsira o valor de um produto \n")
+		escreva("digite 0 para pagar \n")
 		leia(p)
-		escreva("produto número: ", p1, " seu valor é R$: ", p, " \n")
+		enquanto(p != 0){
+		escreva("produto: ", p1, " seu valor é R$: ", p, " \n")
 		p1++
-		se(p == -1){pare}
+		vt = p
+		escreva("o total é: ",vt)
+		pare}
 		
 		}
 		
@@ -24,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 289; 
+ * @POSICAO-CURSOR = 299; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
